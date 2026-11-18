@@ -1,5 +1,19 @@
-PI = 3.14159
-
+PI = 3.14159   # constante
 
 def area_circulo(r):
-    return PI * r ** 2
+    """Área de un círculo."""
+    return PI * r ** 2   # π × r²
+
+def es_primo(n):
+    """Devuelve True si n es primo."""
+    if n < 2:
+        return False
+    for i in range(2, int(n ** 0.5) + 1):
+        if n % i == 0:
+            return False
+    return True
+
+# Solo corre al ejecutar directamente
+if __name__ == "__main__":
+    print(area_circulo(5))
+    print(es_primo(7))
