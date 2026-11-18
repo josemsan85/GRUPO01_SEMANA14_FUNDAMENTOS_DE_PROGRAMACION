@@ -25,7 +25,7 @@ notaMayor =listNotas[0]
 
 for nume in listNotas:
     if nume > notaMayor:
-        notaMayor = nume 
+        notaMayor = nume  
     if nume >= 13:
         alumnosAprov +=1
 
